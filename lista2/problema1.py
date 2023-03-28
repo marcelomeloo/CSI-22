@@ -1,5 +1,6 @@
-def checkEmpty (list):
-    for tuple in list:
+def removeEmpty (list):
+    cleanList = list[:]
+    for tuple in cleanList:
         if len(tuple) == 0:
-            list.remove(tuple)
-    return list
+            cleanList.remove(tuple)
+    return cleanList
